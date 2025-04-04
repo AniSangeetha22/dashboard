@@ -1,15 +1,14 @@
 import React from "react";
-import "./Home.css";
+
 import { createContext, useState, useEffect, useContext } from "react";
 import ProductContext from "../context/ProductContext";
 import { BarChartHome } from "../chartPages/BarChartHome";
 import { AreaChartHome } from "../chartPages/AreaChartHome";
 import { LineChartHome } from "../chartPages/LineChartHome";
 import { PieChartHome } from "../chartPages/PiechartHome";
-
+import "./Home.css";
 
 export const Home = () => {
-  
   const { addonlyOrders, fetchonlyOrders, updatephoneamt, phonetotalamt } =
     useContext(ProductContext);
 
@@ -80,10 +79,10 @@ export const Home = () => {
           <AreaChartHome />
         </div>
         <div className="chartbox">
-          <LineChartHome/>
+          <LineChartHome />
         </div>
         <div className="chartbox">
-          <PieChartHome/>
+          <PieChartHome />
         </div>
       </div>
     </main>

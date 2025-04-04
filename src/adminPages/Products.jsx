@@ -37,7 +37,6 @@ export const Products = () => {
   }, []);
   return (
     <div className="products-main">
-    
       <h3>Products List</h3>
       <table>
         <thead>
@@ -62,14 +61,13 @@ export const Products = () => {
               <td>{item.totalNos}</td>
               <td>{item.ftype}</td>
               <td>
-                <img src={item.pic} alt="" srcset="" />
+                <img src={item.pic} alt="" srcset="image" />
               </td>
               <td>{item.latest}</td>
             </tr>
           ))}
         </tbody>
       </table>
-      
     </div>
   );
 };
