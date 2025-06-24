@@ -5,7 +5,7 @@ import totalorder from "../api/totalOrderDetails";
 import axios from "axios";
 import LoginContext from "./LoginContext";
 
-useContext;
+// useContext;
 
 const ProductContext = createContext({});
 
@@ -98,14 +98,9 @@ export const ProductProvider = ({ children }) => {
     console.log("Product item");
 
     console.log(product);
-    setCart([...cart, product])
-    let localStorageCart = [...cart,product];
+    setCart([...cart, product]);
+    let localStorageCart = [...cart, product];
     localStorage.setItem("cart", JSON.stringify(localStorageCart));
-
-   ;
-
-    
-
 
     const addOrder = {
       orderid,
@@ -486,7 +481,6 @@ export const ProductProvider = ({ children }) => {
         total,
         setTotal,
         totalorders,
-        deleteItem,
       }}
     >
       {children}

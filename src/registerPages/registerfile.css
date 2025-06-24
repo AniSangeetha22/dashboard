@@ -1,0 +1,101 @@
+.regmain {
+    width: 90%;
+    height: 100vh;
+    padding: 30px;
+    /* background-color: #f8f4f0; */
+    margin-top: 3%;
+
+}
+
+.regmain h3 {
+    display: block;
+    width: 600px;
+    margin-bottom: 30px;
+    text-align: center;
+    /* background-color: #125c18; */
+    color: #bc6c25;
+
+    @media (min-width: 300px) and (max-width: 1080px) {
+        width: 300px;
+        margin-top: 10%;
+        margin-bottom: 10px;
+        font-size: large;
+        margin-left: -10px;
+        text-align: left;
+    }
+
+}
+
+.regdiv {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 15%;
+}
+
+
+.regform form {
+    border: 1px soild blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+form div {
+    margin-bottom: 40px;
+    display: flex;
+
+    @media (min-width: 300px) and (max-width: 1080px) {
+        flex-direction: column;
+    }
+}
+
+label {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+
+    @media (min-width: 300px) and (max-width: 1080px) {
+        font-size: 15px;
+        margin-left: 0px;
+    }
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    margin-left: 60px;
+
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    align-items: center;
+    padding-left: 5px;
+
+    @media (min-width: 300px) and (max-width: 1080px) {
+        font-size: 15px;
+        margin-left: 0px;
+    }
+
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #41362d;
+    background-color: #e4a76b;
+    border-radius: 5px;
+    border: 2px solid #bc6c25;
+    /* border: none; */
+
+}
+
+button:hover {
+    background-color: #eec59b;
+    color: #bc6c25;
+}

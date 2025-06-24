@@ -3,6 +3,8 @@
     height: 100vh;
     overflow: hidden;
     margin-top: 70px;
+    /* position: absolute; */
+    margin-left: 2%;
 }
 header{
     margin-top: 10px;
@@ -41,7 +43,7 @@ header p{
     border-radius: 5px;
     font-size: 1.1rem;
 
-    @media screen  and (max-width:768px){
+    @media screen  and (max-width:1080px){
         width: 90%;
     }
    

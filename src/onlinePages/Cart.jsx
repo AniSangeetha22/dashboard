@@ -49,7 +49,7 @@ export const Cart = () => {
             ) : (
               cart.map((item) => (
                 <div className="cartlist" key={item.id}>
-                  <p className="itemid">{item.orderid}</p>
+                  <span className="itemid">{item.orderid}</span>
                   <h4>{item.name}</h4>
                   <p>{item.amt} €</p>
                   <div className="btns">

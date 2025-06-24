@@ -14,9 +14,16 @@ import {
 import "../adminPages/Home.css";
 
 export const BarChartHome = () => {
-  const { totalorders, fetchTotalOrders, products, fetchPosts } =
-    useContext(ProductContext);
-
+  const {
+    totalorders,
+    fetchTotalOrders,
+    products,
+    fetchPosts,
+    fetchonlyOrders,
+  } = useContext(ProductContext);
+  useEffect(() => {
+    fetchonlyOrders();
+  }, []);
   useEffect(() => {
     fetchTotalOrders();
   }, []);
@@ -40,10 +47,11 @@ export const BarChartHome = () => {
   console.log(totalorders);
 
   return (
-    <div className="charth4">
+    // <div className="charth4">
+    <div style={{ width: "100%", height: 300 }}>
       <h4>BarChart</h4>
 
-      <ResponsiveContainer width={600} height={300}>
+      <ResponsiveContainer>
         <BarChart
           width={600}
           height={300}
@@ -58,9 +66,9 @@ export const BarChartHome = () => {
           <Tooltip />
           <Legend />
           <Bar dataKey="total" fill="#2563eb" />
-          <Bar dataKey="quantity" fill="#780000" />
+          {/* <Bar dataKey="quantity" fill="#780000" /> */}
 
-          <Bar dataKey="username" fill="#264653" />
+          <Bar dataKey="users.username" fill="#264653" />
           {/* <Bar dataKey="subamt" fill="#8b5cf6" /> */}
         </BarChart>
       </ResponsiveContainer>

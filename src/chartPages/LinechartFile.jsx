@@ -36,18 +36,25 @@ export const LinechartFile = () => {
   console.log(totalorders);
 
   return (
-    <div style={{ marginTop: "80px", width: "100%", height: "80%" }}>
+    <div
+      style={{
+        marginTop: "80px",
+        width: "100%",
+        height: "60%",
+        position: "absolute",
+      }}
+    >
       <h3
         style={{
           marginTop: "60px",
           marginBottom: "25px",
-          marginTop: "10px",
+
           color: "#bc6c25",
         }}
       >
         Line Chart{" "}
       </h3>
-      <ResponsiveContainer width="100%" height={800}>
+      <ResponsiveContainer>
         <LineChart
           width="100%"
           height="80%"

@@ -5,7 +5,7 @@ import ProductContext from "../context/ProductContext";
 import { BarChartHome } from "../chartPages/BarChartHome";
 import { AreaChartHome } from "../chartPages/AreaChartHome";
 import { LineChartHome } from "../chartPages/LineChartHome";
-import { PieChartHome } from "../chartPages/PiechartHome";
+import { PieChartHome } from "../chartPages/PieChartHome";
 import "./Home.css";
 
 export const Home = () => {

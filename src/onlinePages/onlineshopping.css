@@ -2,8 +2,15 @@
     
      width: 100%; 
      height: 100vh;
+     margin-left: -60px;
    
     margin-top: 60px;
+    z-index: -99;
+    /* position: absolute; */
+    @media only screen and (max-width: 1080px) {
+        margin-left: 5%;
+    }
+
 }
 .homepage-hero-image{
     width: 80%;
@@ -12,9 +19,7 @@
    display: flex;
    justify-content: space-between;
 
-   @media screen  and (max-width:768px){
-    width: 90%;
-}
+   
   
 }
 .homepage-hero-image img{
@@ -24,6 +29,11 @@
     border-radius: 20px;
     margin-bottom: 25px;
     margin-right: 10px;
+ 
+    @media screen  and (max-width:1080px){
+       display: none;
+    }
+     
    
     
    
@@ -38,9 +48,16 @@
     height: auto;
     margin-left: 30px;
     flex-wrap: wrap;
+    z-index: -1;
    
-    @media screen  and (max-width:768px){
-        width: 50%;
+    @media screen  and (max-width:1080px){
+        width: 100%;
+        /* margin-left: -15px; */
+        
+        /* flex-direction: row;  */
+        /* justify-content: flex-start; */
+ /* align-items: center;  */
+        /* background-color: aquamarine; */
     }
     /* border: 1px solid red; */
 
@@ -51,27 +68,31 @@
     height: 420px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    /* align-items: center; */
+    justify-content: space-between;
+    align-items: center;
     border:1px solid rgb(204, 196, 196) ;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    position: relative;
-    @media screen  and (max-width:768px){
-        width: 100px;
-        height: 160px;
+    /* position: relative; */
+    @media screen  and (max-width:1080px){
+        width: 200px;
+        height: 340px;
         padding: 2px;
-        margin: 2px;
+        margin-bottom: 5px;
+         align-items: center;
+         padding: 10px;
     }
 }
 .card-image{
     width: 100px;
     height: 200px;  
     margin-bottom: 15px;
-    @media screen  and (max-width:768px){
-        width: 75px;
-    height: 100px;
+    @media screen  and (max-width:1080px){
+        width: 85px;
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     }
 }
 .card-image img{
@@ -79,11 +100,21 @@
     height: auto;
     margin-bottom: 20px;
     align-content: center;
-    @media screen  and (max-width:768px){
-        width: 75px;
+    @media screen  and (max-width:1080px){
+        width: 100px;
         margin-bottom: 10px;
+        
 
     }
+}
+
+.homepage-card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+   
+   
 }
 .card-name{
     font-size: 25px;
@@ -105,18 +136,18 @@
     color: rgb(170, 87, 28);
     margin-bottom: 15px;
 }
-.qtydiv{
+/* .qtydiv{
     position: absolute;
     width: 90%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* border: 1px solid red; */
+    /* border: 1px solid red; 
   
    
 
-}
-.homepage-card-image .addcartbtn{
+} */
+.homepage-card-details .addcartbtn{
    
     width: 150px;
     height: 45px;
@@ -126,8 +157,10 @@
     background-color:rgb(170, 87, 28) ;
     border-radius: 10px;
     border: none;
-    margin-left: 10px;
-    margin-bottom: 10px;
+ 
+    /* margin-left: 10px; */
+    /* margin-bottom: 10px; */
+    /* align-items: end; */
   
   
 }
@@ -136,8 +169,27 @@
     color:rgb(170, 87, 28) ;
     border: 1px solid rgb(170, 87, 28);
 }
+@media screen  and (max-width:1080px){
+    .card-name,  .card-amt{
+        font-size: 1.2rem;
+    }
+    .card-des{
+        display: none;
+    }
+    .homepage-card-image .addcartbtn{
+        width: 110px;
+        height: 35px;
+        font-size: 1rem;
+       margin-left: -10px;
+        
 
-.qtybtn{
+    }
+
+}
+
+
+
+/* .qtybtn{
     width: 50px;
     height: 45px;
     font-size: 20px;
@@ -171,4 +223,4 @@ margin-right: 5px;
     margin-right: 5px;
     margin-bottom: 10px;
    
-}
+} */

@@ -10,6 +10,8 @@ import { AreachartFile } from "../chartPages/AreachartFile";
 import { BarchartFile } from "../chartPages/BarchartFile";
 import { LinechartFile } from "../chartPages/LinechartFile";
 import { Cart } from "../onlinePages/Cart";
+import { RegisterFile } from "../registerPages/RegisterFile";
+import { LoginFile } from "../registerPages/LoginFile";
 export const RightSideContentBar = () => {
   return (
     <div className="right-side-content">
@@ -23,6 +25,9 @@ export const RightSideContentBar = () => {
         <Route path="/barchartfile" element={<BarchartFile />} />
         <Route path="/linechartfile" element={<LinechartFile />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/loginfile" element ={<LoginFile/>}/>
+        <Route path="/registerfile" element ={<RegisterFile/>}/>
+      
       </Routes>
     </div>
   );

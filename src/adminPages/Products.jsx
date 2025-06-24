@@ -61,7 +61,7 @@ export const Products = () => {
               <td>{item.totalNos}</td>
               <td>{item.ftype}</td>
               <td>
-                <img src={item.pic} alt="" srcset="image" />
+                <img src={item.pic} alt="" srcSet="" />
               </td>
               <td>{item.latest}</td>
             </tr>

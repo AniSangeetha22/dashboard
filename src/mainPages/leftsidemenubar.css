@@ -2,6 +2,15 @@
     width: 100%;
     height: 100vh;
     /* background-color: rgb(144, 144, 182); */
+    margin-left: 7%;
+    margin-top: 10%;
+
+    @media only screen and (max-width: 1080px) {
+        /* position: absolute; */
+    /* margin-top: -100%;  */
+    z-index: 999;
+    }
+   
  
  
   
@@ -9,10 +18,12 @@
    
 }
 .menu-btn{
-    margin-top:20%;
-   
+    /* margin-top:20%; */
+ 
     display: none; 
     cursor: pointer;
+   
+    
     
 }
 .left-admin-pages{
@@ -20,21 +31,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding-left: 5%;
-    margin-top:18%;
+    padding-left: 3%;
+    margin-top:22%;
     /* margin-top: 60px; */
     /* margin-left:-107%; */
     margin-left: 7%;
+   
     
    
     
 }
 
 .left-admin-pages span {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold; 
     color: #aa571c;
     margin-left: -15px;
+    /* margin-right: 5px; */
     
     
 
@@ -44,7 +57,7 @@
 
 .link-style{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #525B75;
     display: flex;
@@ -52,6 +65,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+   
     
 }
 .link-style:hover{
@@ -61,18 +75,21 @@
 
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (max-width: 780px) {
+ @media only screen and (max-width: 1080px) {
 
     .left-admin-pages{
         width: 100%;
-        margin-top:-1%;
+        margin-top:1%;
         margin-left:-107%;
-        background-color:#b1b7ca;
+        background-color:gray;
+        
        
         position: absolute;
     }
     .left-admin-pages span{
         margin-left: -5px;
+        color: #ccc;
+        text-decoration: underline;
     }
     .left-admin-pages.active{
         margin-left: -2%;
@@ -80,7 +97,9 @@
     .link-style{
         margin-top: 10px;
         margin-bottom: 1px;
-        color: #282d3d;
+        /* color: #282d3d; */
+        color: #ccc;
+        z-index: 999;
     }
    
     /* .link-style p{
@@ -91,12 +110,16 @@
     } */
     .menu-btn{
         display: block;
-         margin-top:100%;
+        position: sticky;
+        
+        margin-left: -7%;
+         margin-top:-10%;
          width: 60px;
-         height: 40px;
-         background-color: #b1b7ca;
-        align-content: center;
+         height:60px;
+         background-color: #ffffff;
+        align-content:center;
         text-align: center;
+       
         
     }
     

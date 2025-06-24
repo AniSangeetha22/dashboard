@@ -176,7 +176,7 @@
       "latest": "yes"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Huawei mate50",
       "des": "Huawei mate50 256Gb",
       "amt": 1256,
@@ -186,7 +186,7 @@
       "latest": "yes"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Huawei matex6",
       "des": "Huawei matex6 512GB",
       "amt": 1345,
@@ -196,7 +196,7 @@
       "latest": "No"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Huawei Nova30",
       "des": "Huawei Nova30 256gb",
       "amt": 549,
@@ -206,7 +206,7 @@
       "latest": "No"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Huawei p50 Pro",
       "des": "Huawei p50 Pro 128GB",
       "amt": 528,
@@ -216,7 +216,7 @@
       "latest": "No"
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Huawei pura70",
       "des": "Huawei pura70 512GB",
       "amt": 999,
@@ -226,7 +226,7 @@
       "latest": "yes"
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Samsung S23",
       "des": "Samsung S23 Orange",
       "amt": 468,
@@ -236,7 +236,7 @@
       "latest": "yes"
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Samsung S24",
       "des": "Samsung S24 128GB",
       "amt": 556,
@@ -246,13 +246,23 @@
       "latest": "yes"
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Samsung S22",
       "des": "Samsung S22 Ultra 5G",
       "amt": 370,
       "totalNos": 50,
       "ftype": "Samsung Galaxy",
       "pic": "images/samsung/samsung-galaxy-s22-ultra-5g.webp",
+      "latest": "yes"
+    },
+    {
+      "id": "25",
+      "name": "realme11Pro+",
+      "des": "realme11Pro+ 5G",
+      "amt": 400,
+      "totalNos": 20,
+      "ftype": "realme",
+      "pic": "images/realme/realme-11pro-512gb.jpg",
       "latest": "yes"
     }
   ],
@@ -312,7 +322,7 @@
       "password": "sahayaraj12"
     },
     {
-      "id": 10,
+      "id": "10",
       "username": "David",
       "email": "david@gmail.com",
       "password": "david12"
@@ -475,7 +485,7 @@
       "value": 4
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "iPhone 14",
       "des": "iphone 14  Deep Violett 256gb",
       "amt": 575,
@@ -484,7 +494,7 @@
       "value": 3
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Samsung Galaxy",
       "des": "Samsung Galaxy Z Flip 256gb",
       "amt": 854,
@@ -493,7 +503,7 @@
       "value": 4
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Samsung Galaxy",
       "des": "Samsung Galaxy Lila 128gb",
       "amt": 456,
@@ -502,7 +512,7 @@
       "value": 5
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "iPhone 16",
       "des": "iphone 16 128 gb",
       "amt": 710,
@@ -511,7 +521,7 @@
       "value": 6
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Huawei matex6",
       "des": "Huawei matex6 512GB",
       "amt": 1345,
@@ -520,7 +530,7 @@
       "value": 5
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Huawei Nova30",
       "des": "Huawei Nova30 256gb",
       "amt": 549,
@@ -529,7 +539,7 @@
       "value": 3
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Huawei p50 Pro",
       "des": "Huawei p50 Pro 128GB",
       "amt": 528,
@@ -538,7 +548,7 @@
       "value": 2
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Huawei mate50",
       "des": "Huawei mate50 256Gb",
       "amt": 1256,
@@ -547,7 +557,7 @@
       "value": 1
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Samsung S24",
       "des": "Samsung S24 128GB",
       "amt": 556,
@@ -556,7 +566,7 @@
       "value": 3
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Samsung S23",
       "des": "Samsung S23 Orange",
       "amt": 468,
@@ -565,7 +575,7 @@
       "value": 2
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "Huawei Nova30",
       "des": "Huawei Nova30 256gb",
       "amt": 549,
@@ -574,7 +584,7 @@
       "value": 4
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Huawei p50 Pro",
       "des": "Huawei p50 Pro 128GB",
       "amt": 528,
@@ -583,7 +593,7 @@
       "value": 2
     },
     {
-      "id": 31,
+      "id": "31",
       "name": "iphone12-Pro",
       "amt": 456,
       "subamt": 456,
@@ -591,11 +601,128 @@
       "value": 1
     },
     {
-      "id": 32,
+      "id": "32",
       "name": "iphone13",
       "amt": 424,
       "subamt": 424,
       "ftype": "iphone",
+      "value": 1
+    },
+    {
+      "id": "33",
+      "name": "iphone13",
+      "des": "iphone 13",
+      "amt": 424,
+      "subamt": 1272,
+      "ftype": "iphone",
+      "value": 3
+    },
+    {
+      "id": "34",
+      "name": "iphone12-Pro",
+      "des": "iphone 12 Pro",
+      "amt": 456,
+      "subamt": 1368,
+      "ftype": "iphone",
+      "value": 3
+    },
+    {
+      "id": "35",
+      "name": "iphone12-graphit",
+      "des": "iphone 12 Graphit",
+      "amt": 384,
+      "subamt": 1152,
+      "ftype": "iphone",
+      "value": 3
+    },
+    {
+      "id": "36",
+      "name": "Huawei mate50",
+      "des": "Huawei mate50 256Gb",
+      "amt": 1256,
+      "subamt": 2512,
+      "ftype": "huawei",
+      "value": 2
+    },
+    {
+      "id": "37",
+      "name": "Huawei p50 Pro",
+      "des": "Huawei p50 Pro 128GB",
+      "amt": 528,
+      "subamt": 528,
+      "ftype": "huawei",
+      "value": 1
+    },
+    {
+      "id": "38",
+      "name": "Huawei pura70",
+      "des": "Huawei pura70 512GB",
+      "amt": 999,
+      "subamt": 1998,
+      "ftype": "huawei",
+      "value": 2
+    },
+    {
+      "id": 39,
+      "name": "iphone12-Pro",
+      "des": "iphone 12 Pro",
+      "amt": 456,
+      "subamt": 456,
+      "ftype": "iphone",
+      "value": 1
+    },
+    {
+      "id": 40,
+      "name": "iphone13",
+      "des": "iphone 13",
+      "amt": 424,
+      "subamt": 424,
+      "ftype": "iphone",
+      "value": 1
+    },
+    {
+      "id": 41,
+      "name": "iphone12-Pro",
+      "des": "iphone 12 Pro",
+      "amt": 456,
+      "subamt": 1368,
+      "ftype": "iphone",
+      "value": 3
+    },
+    {
+      "id": 42,
+      "name": "iphone13",
+      "des": "iphone 13",
+      "amt": 424,
+      "subamt": 424,
+      "ftype": "iphone",
+      "value": 1
+    },
+    {
+      "id": 43,
+      "name": "iPhone 14",
+      "des": "iphone 14  Deep Violett 256gb",
+      "amt": 575,
+      "subamt": 1725,
+      "ftype": "iphone",
+      "value": 3
+    },
+    {
+      "id": 44,
+      "name": "Samsung Galaxy",
+      "des": "Samsung Galaxy Z Fold 256gb",
+      "amt": 980,
+      "subamt": 980,
+      "ftype": "SamsungGalaxy",
+      "value": 1
+    },
+    {
+      "id": 45,
+      "name": "Samsung Galaxy",
+      "des": "Samsung Galaxy Z Flip 256gb",
+      "amt": 854,
+      "subamt": 854,
+      "ftype": "SamsungGalaxy",
       "value": 1
     }
   ]

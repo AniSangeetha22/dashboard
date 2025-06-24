@@ -40,31 +40,12 @@ export const OnlineShopping = () => {
               <p className="card-name">{val.name}</p>
               <p className="card-des">{val.des}</p>
               <p className="card-amt">{val.amt}&nbsp;€</p>
-              <div className="qtydiv">
-                {/* <button
-                  className="qtybtn"
-                  onClick={(e) => decreaseQuantity(e, val.id)}
-                >
-                  -
-                </button>
-                {/* <input
-                  type="number"
-                  name=""
-                  id=""
-                  value={qty}
-                  className="qtyinput"
-                /> *
-                <span>{val.value}</span>
-                <button
-                  className="qtybtn1"
-                  onClick={(e) => increaseQuantity(e, val.id)}
-                >
-                  +
-                </button> */}
-                <button className="addcartbtn" onClick={() => addCart(val.id)}>
-                  Add To Cart
-                </button>
-              </div>
+
+              {/* <div className="qtydiv"> */}
+              <button className="addcartbtn" onClick={() => addCart(val.id)}>
+                Add To Cart
+              </button>
+              {/* </div> */}
             </div>
           </div>
         ))}

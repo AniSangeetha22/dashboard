@@ -1,0 +1,76 @@
+.dropdownlogout{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin-top: 40px; 
+    /* margin-left: 1900px; */
+    margin-left: -50px;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    /* cursor: pointer; */
+    border:1px solid gray ; 
+    border-radius: 5px;
+    color: #bc6c25;
+   font-size: 16px;
+    font-weight: 500;
+    z-index:999;
+    
+ }
+ /* .dropdownlogout p{
+   color: #bc6c25;
+   font-size: 16px;
+    font-weight: 500;
+ } */
+
+ /* .dropdownlogout ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    cursor: pointer;
+    list-style: none;
+    margin-top: 1px;
+    padding-left: 10px; 
+ }*/
+ .dropdownli{
+    cursor: pointer;
+ }
+ .dropdownli{
+   text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #bc6c25;
+    
+   
+ }
+
+ /* .dropdownlogout ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    cursor: pointer;
+    list-style: none;
+    margin-top: 1px;
+    padding-left: 10px;
+ }
+ .dropdownli{
+    cursor: pointer;
+ }
+
+ .dropdownli, .dropdownspan{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #bc6c25;
+ }
+ .dropdownli:hover{
+    color: #44230c; 
+ }
+
+.dropdownspan:hover{
+    color: #44230c;
+ } */

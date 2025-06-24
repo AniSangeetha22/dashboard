@@ -4,6 +4,7 @@
     height: 100vh;
     overflow: auto;
     margin-top: 70px;
+    /* position: absolute; */
    
  }
  div h3{
@@ -20,7 +21,7 @@
     color: #41362d;
     object-fit: fill;
 
-     @media screen  and (max-width:768px){
+     @media screen  and (max-width:1080px){
         width: 100%;
     }
    

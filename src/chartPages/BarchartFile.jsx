@@ -74,13 +74,14 @@ export const BarchartFile = () => {
   console.log(totaliphone16);
 
   return (
-    <div style={{ width: "100%", height: "600px", marginTop: "80px" }}>
+    <div style={{ width: "100%", height: "600px", marginTop: "80px", position:"absolute" }}>
       <h3
         style={{
           marginTop: "60px",
           marginBottom: "25px",
-          marginTop: "10px",
+
           color: "#bc6c25",
+         
         }}
       >
         BarChart

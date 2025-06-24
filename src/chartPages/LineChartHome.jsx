@@ -46,9 +46,10 @@ export const LineChartHome = () => {
   console.log("Bar Chart");
   console.log(addonlyOrders);
   return (
-    <div className="charth4">
+      <div style={{ width: "100%", height: 300 }}>
+    {/* // <div className="charth4"> */}
       <h4>LineChart</h4>
-      <ResponsiveContainer width={600} height={300}>
+      <ResponsiveContainer  >
         <LineChart
           width={600}
           height={300}

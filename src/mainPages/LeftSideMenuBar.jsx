@@ -18,6 +18,8 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import { TbMenu2 } from "react-icons/tb";
+import { IoCloseOutline } from "react-icons/io5";
 
 export const LeftSideMenuBar = () => {
   const [open, setOpen] = useState(false);
@@ -27,7 +29,11 @@ export const LeftSideMenuBar = () => {
   return (
     <div className="left-side-menu">
       <div onClick={handleClick} className="menu-btn">
-        {open ? <X size={25} /> : <Menu size={25} />}
+        {open ? (
+          <X size={25} color="#aa571c" fill="#aa571c" />
+        ) : (
+          <Menu size={25} color="#aa571c" fill="#aa571c" />
+        )}
       </div>
       <div className={open ? "left-admin-pages active" : "left-admin-pages"}>
         <span>Admin Pages</span>
@@ -56,6 +62,13 @@ export const LeftSideMenuBar = () => {
         </Link>
         <Link onClick={closeMenu} className="link-style" to="/linechartfile">
           <ChartLine size={19} /> <p>Line Chart</p>
+        </Link>
+        <span>Register Pages</span>
+        <Link onClick={closeMenu} className="link-style" to="/registerfile">
+          <ChartArea size={19} /> <p>Register Page</p>
+        </Link>
+        <Link onClick={closeMenu} className="link-style" to="/loginfile">
+          <ChartColumnBig size={19} /> <p>Login Page</p>
         </Link>
       </div>
     </div>

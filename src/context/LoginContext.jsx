@@ -63,7 +63,7 @@ export const UserLoginProvider = ({ children }) => {
       setUsername("");
       setEmail("");
       setPassword("");
-      navigate("/loginuserfile");
+      navigate("/loginfile");
 
       // history.push('/');
     } catch (err) {
@@ -127,6 +127,7 @@ export const UserLoginProvider = ({ children }) => {
     } catch (error) {
       setError("An error occurred during login");
       console.error("Login error:", error);
+      alert("False email");
     } finally {
       setLoading(false);
     }
@@ -138,7 +139,7 @@ export const UserLoginProvider = ({ children }) => {
   const logout = () => {
     setUser(null); // Clear the logged-in user
     localStorage.removeItem("user"); // Remove user from localStorage
-    navigate("/")
+    navigate("/");
   };
 
   return (

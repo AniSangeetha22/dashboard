@@ -14,11 +14,20 @@ import ProductContext from "../context/ProductContext";
 import "../adminPages/Home.css";
 
 export const AreaChartHome = () => {
-  const { products, fetchTotalOrders, addonlyOrders, fetchonlyOrders } =
-    useContext(ProductContext);
+  const {
+    products,
+    fetchTotalOrders,
+    addonlyOrders,
+    fetchonlyOrders,
+    fetchPosts,
+  } = useContext(ProductContext);
 
   useEffect(() => {
     fetchTotalOrders();
+  }, []);
+
+  useEffect(() => {
+    fetchPosts();
   }, []);
 
   // const [chartWidth2, setChartWidth2] = useState(
@@ -38,9 +47,11 @@ export const AreaChartHome = () => {
   console.log(addonlyOrders);
 
   return (
-    <div className="charth4">
+    <div style={{ width: "100%", height: 300 }}>
+      {/* // <div className="charth4"> */}
       <h4>AreaChart</h4>
-      <ResponsiveContainer width={600} height={300}>
+      <ResponsiveContainer>
+        {/* <ResponsiveContainer width={600} height={300}> */}
         <AreaChart
           width={600}
           height={300}
@@ -70,13 +81,13 @@ export const AreaChartHome = () => {
             stroke="#82ca9d"
             fill="#82ca9d"
           />
-          {/* <Area
+          <Area
             type="monotone"
             dataKey="subamt"
             stackId="1"
             stroke="#ffc658"
             fill="#ffc658"
-          /> */}
+          />
         </AreaChart>
       </ResponsiveContainer>
     </div>

@@ -8,11 +8,14 @@ import {
   ShoppingCart,
 } from "lucide-react";
 
+
 import { useContext } from "react";
 import ProductContext from "../context/ProductContext";
 import phoeniximage from "../asserts/heroimage/phoenixlogo.jpg";
 
-import { DropdownMenu } from "./DropdownMenu";
+// import { DropdownLogout } from "./DropdownLogout";
+
+import { DropdownLogout } from "./DropdownLogout";
 import "./topnavbar.css";
 // import LoginContext from "../../context/LoginContext";
 
@@ -56,7 +59,7 @@ export const TopNavBar = () => {
   const loginNavigate = (e) => {
     e.preventDefault();
     if (!storedUser) {
-      navigate("/loginuserfile");
+      navigate("/loginfile");
     } else {
       navigate("/cart");
     }
@@ -73,8 +76,8 @@ export const TopNavBar = () => {
         <li>
           <span className="nav-link" onClick={() => setDropdown(!dropdown)}>
             <SquareUserRound size={26} />
+            {dropdown && <DropdownLogout />}
           </span>
-          {dropdown && <DropdownMenu />}
         </li>
 
         <li>

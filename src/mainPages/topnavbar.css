@@ -9,8 +9,12 @@
     border-bottom:1px solid gray ; 
     align-items:center;
     font-size:600;
+    background-color: rgb(170, 87, 28);;
     color: #ccc;
+    padding: 25px;
     /* position: fixed; */
+    position: relative;
+    z-index: 999;
 
 }
 
@@ -19,17 +23,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-right: 2%;
+    margin-right: 20%;
     color: #ccc;
-    @media only screen and (max-width: 780px) {
-        margin-right: 6%;
+    @media only screen and (max-width: 1080px) {
+        margin-right: 10%;
     }
     
 }
 .nav-themes li{
     padding-right: 15px;
     list-style: none;
-    color: #41362d;
+    /* color: #41362d; */
+    color: #ccc;
 }
 .nav-themes ul{
     display: flex;
@@ -46,6 +51,9 @@
     align-items: center;
     cursor: pointer;
     padding-left: 3%;
+    @media only screen and (max-width: 1080px) {
+        padding-left: 15%;
+    }
 }
 .nav-side-heading img{
     width: 35px;
@@ -57,13 +65,15 @@
 }
 .nav-side-heading li {
     list-style: none;
-    color: #41362d;
+    /* color: #41362d; */
+    color: #ccc;
 }
 .nav-side-heading span{
     font-weight: 600;
     font-style: normal;
     font-size: 26px;
-    color: #41362d;
+    color: #ccc;
+    /* color: #41362d; */
     text-decoration: none solid rgba(82, 91, 117, 0.8);
     text-align:start;
 text-indent:0px;
@@ -74,19 +84,22 @@ letter-spacing: 0px;
   flex-direction: row;
   text-decoration: none;
   font-size: 20px;
-  color: #41362d;
+  /* color: #41362d; */
   font-style: normal;
 
  } 
+ .nav-link:hover{
+    cursor: pointer;
+ }
 
  /* ----------------------------------------------------------------------------- */
- 
+/*  
  .dropdownlogout{
     position: absolute;
     width: 150px;
-    height: 140px;
-    /* margin-top: 10px; */
-    /* margin-left: 1900px; */
+    height: 165px;
+margin-top: 40px;
+    /* margin-left: 1900px; *
     margin-left: -50px;
 background-color: #ccc;
     display: flex;
@@ -106,6 +119,7 @@ background-color: #ccc;
     list-style: none;
     margin-top: 1px;
     padding-left: 10px;
+    z-index:10
  }
 
  .dropdownli, .dropdownspan{
@@ -113,11 +127,13 @@ background-color: #ccc;
     font-size: 16px;
     font-weight: 500;
     color: #bc6c25;
+    cursor: pointer;
  }
  .dropdownli:hover{
     color: #44230c; 
+    cursor: pointer;
  }
 
 .dropdownspan:hover{
     color: #44230c;
- }
+ } */
